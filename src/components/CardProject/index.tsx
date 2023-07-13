@@ -9,7 +9,7 @@ type CardProjectProps = {
 
 export const CardProject = (card: CardProjectProps) => {
   return (
-    <div className="lg:w-80 h-full w-60 border border-grey flex flex-col">
+    <div className="lg:w-80 w-60 h-min border border-grey flex flex-col">
       <div className="h-48">
         <img src={card.image} className="h-full" />
       </div>
