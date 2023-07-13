@@ -37,7 +37,7 @@ export const App = () => {
             <button
               className="border border-primary-purple w-36 h-9"
               onClick={() => {
-                navigate("/contato");
+                navigate("/portfolio/contato");
               }}
             >
               fale comigo!

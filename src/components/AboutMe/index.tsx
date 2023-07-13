@@ -32,7 +32,7 @@ export const AboutMe = () => {
             className="text-sm font-medium w-36 h-9 border text-white border-primary-purple"
             onClick={() => {
               window.scrollTo(0, 0);
-              navigate("/sobre-mim");
+              navigate("/portfolio/sobre-mim");
             }}
           >
             Leia mais {"->"}

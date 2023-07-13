@@ -25,19 +25,19 @@ export const Header = () => {
           <div className="flex justify-between">
             <p
               className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300"
-              onClick={() => handleRedirect("/projetos")}
+              onClick={() => handleRedirect("/portfolio/projetos")}
             >
               <span className="text-primary-purple">#</span>projetos
             </p>
             <p
               className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300"
-              onClick={() => handleRedirect("/sobre-mim")}
+              onClick={() => handleRedirect("/portfolio/sobre-mim")}
             >
               <span className="text-primary-purple">#</span>sobre-mim
             </p>
             <p
               className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300"
-              onClick={() => handleRedirect("/contato")}
+              onClick={() => handleRedirect("/portfolio/contato")}
             >
               <span className="text-primary-purple">#</span>
               contato
@@ -87,7 +87,7 @@ export const Header = () => {
               <li>
                 <p
                   className="cursor-pointer"
-                  onClick={() => handleRedirect("/projetos")}
+                  onClick={() => handleRedirect("/portfolio/projetos")}
                 >
                   <span className="text-primary-purple">#</span>projetos
                 </p>
@@ -95,7 +95,7 @@ export const Header = () => {
               <li>
                 <p
                   className="cursor-pointer"
-                  onClick={() => handleRedirect("/sobre-mim")}
+                  onClick={() => handleRedirect("/portfolio/sobre-mim")}
                 >
                   <span className="text-primary-purple">#</span>sobre-mim
                 </p>
@@ -103,7 +103,7 @@ export const Header = () => {
               <li>
                 <p
                   className="cursor-pointer"
-                  onClick={() => handleRedirect("/contato")}
+                  onClick={() => handleRedirect("/portfolio/contato")}
                 >
                   <span className="text-primary-purple">#</span>contato
                 </p>

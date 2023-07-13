@@ -6,9 +6,9 @@ export const Routes = () => {
   return (
     <RoutesDOM>
       <Route path="/portfolio" element={<App />} />
-      <Route path="/projetos" element={<ProjectsPage />} />
-      <Route path="/sobre-mim" element={<AboutMePage />} />
-      <Route path="/contato" element={<ContactPage />} />
+      <Route path="/portfolio/projetos" element={<ProjectsPage />} />
+      <Route path="/portfolio/sobre-mim" element={<AboutMePage />} />
+      <Route path="/portfolio/contato" element={<ContactPage />} />
     </RoutesDOM>
   );
 };

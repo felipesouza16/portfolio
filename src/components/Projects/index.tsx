@@ -20,7 +20,7 @@ export const Projects = () => {
             className="text-base text-end cursor-pointer"
             onClick={() => {
               window.scrollTo(0, 0);
-              navigate("/projetos");
+              navigate("/portfolio/projetos");
             }}
           >
             Ver tudo {"~~>"}
