@@ -16,7 +16,7 @@ export const Header = () => {
         <div className="flex flex-col justify-end">
           <p
             className="text-base font-bold cursor-pointer"
-            onClick={() => handleRedirect("/")}
+            onClick={() => handleRedirect("/portfolio")}
           >
             felipeSouza.dev
           </p>
