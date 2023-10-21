@@ -1,11 +1,17 @@
 [
-   {
+  {
     "name": "Dashboard Admin (CMS)",
     "repository": "https://github.com/felipesouza16/dashboard-admin",
-    "technologies": [" Next 13", " Tailwind", " Typescript", " MongoDb", "Prisma"],
+    "technologies": [
+      " Next 13",
+      " Tailwind",
+      " Typescript",
+      " MongoDb",
+      " Prisma"
+    ],
     "description": "Aplicação CMS para ecommerce",
     "link_live": "https://dashboard-admin-kappa.vercel.app/",
-    "image": "https://github.com/felipesouza16/dashboard-admin/assets/86385745/d04565ec-a8a3-4782-a0ff-bf3da496747e"
+    "image": "https://github.com/felipesouza16/portfolio/assets/86385745/a4bbd0bd-ccd8-4d56-b072-f2442f8c4628"
   },
   {
     "name": "Stock control (front-end)",
