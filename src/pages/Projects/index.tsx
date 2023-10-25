@@ -23,9 +23,10 @@ export const ProjectsPage = () => {
             apps-completos
           </p>
           <div className="hidden lg:flex lg:flex-row gap-y-4 w-full h-full justify-start gap-x-3 flex-wrap">
-            {projects.map((project) => {
+            {projects.map((project, index) => {
               return (
                 <CardProject
+                  key={index}
                   name={project.name}
                   repository={project.repository}
                   technologies={project.technologies}
@@ -37,10 +38,11 @@ export const ProjectsPage = () => {
             })}
           </div>
           <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral bg-transparent rounded-box lg:hidden">
-            {projects.map((project) => {
+            {projects.map((project, index) => {
               return (
                 <div className="carousel-item">
                   <CardProject
+                    key={index}
                     name={project.name}
                     repository={project.repository}
                     technologies={project.technologies}
