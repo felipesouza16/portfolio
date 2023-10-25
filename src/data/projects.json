@@ -29,7 +29,8 @@
       " Express",
       " GraphQL",
       " Typescript",
-      " MongoDB"
+      " MongoDB",
+      " Apollo"
     ],
     "description": "back-end para controle de estoque",
     "link_live": "https://stock-control-api.onrender.com",
