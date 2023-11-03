@@ -3,7 +3,7 @@ import { LinkedIn } from "../../assets/LinkedIn";
 
 export const Contact = () => {
   return (
-    <div className="flex flex-col w-3/4 gap-y-8">
+    <section className="flex flex-col w-3/4 gap-y-8">
       <div className="flex">
         <h2 className="text-2xl">
           <span className="text-primary-purple">#</span>
@@ -46,6 +46,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -23,30 +23,20 @@ export const CardProject = (card: CardProjectProps) => {
           <h1 className="text-xl">{card.name}</h1>
           <p className="text-base text-grey">{card.description}</p>
           <div className="flex justify-start gap-x-4">
-            <button
-              type="button"
-              className="text-sm w-28 h-8 border border-primary-purple"
+            <a
+              href={card.link_live}
+              target="_blank"
+              className="text-sm w-28 h-8 border border-primary-purple flex justify-center items-center"
             >
-              <a
-                href={card.link_live}
-                target="_blank"
-                className="h-full w-full flex justify-center items-center"
-              >
-                Live {"<~>"}
-              </a>
-            </button>
-            <button
-              type="button"
-              className="text-sm w-28 h-8 border border-grey"
+              Live {"<~>"}
+            </a>
+            <a
+              href={card.repository}
+              target="_blank"
+              className="text-sm w-28 h-8 border border-grey flex justify-center items-center"
             >
-              <a
-                href={card.repository}
-                target="_blank"
-                className="h-full w-full flex justify-center items-center"
-              >
-                Github {"<~>"}
-              </a>
-            </button>
+              Github {"<~>"}
+            </a>
           </div>
         </div>
       </div>

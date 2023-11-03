@@ -11,37 +11,37 @@ export const Header = () => {
   };
 
   return (
-    <div className="flex h-16 z-50 bg-background fixed w-3/4">
-      <div className="flex justify-between w-full">
+    <header className="flex h-16 z-50 bg-background fixed w-3/4">
+      <nav className="flex justify-between w-full">
         <div className="flex flex-col justify-end">
-          <p
+          <a
             className="text-base font-bold cursor-pointer"
             onClick={() => handleRedirect("/portfolio")}
           >
             felipeSouza.dev
-          </p>
+          </a>
         </div>
         <div className="lg:flex lg:flex-col lg:justify-end lg:w-96 text-grey max-lg:hidden">
           <div className="flex justify-between">
-            <p
+            <a
               className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300"
               onClick={() => handleRedirect("/portfolio/projetos")}
             >
               <span className="text-primary-purple">#</span>projetos
-            </p>
-            <p
+            </a>
+            <a
               className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300"
               onClick={() => handleRedirect("/portfolio/sobre-mim")}
             >
               <span className="text-primary-purple">#</span>sobre-mim
-            </p>
-            <p
+            </a>
+            <a
               className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white duration-300"
               onClick={() => handleRedirect("/portfolio/contato")}
             >
               <span className="text-primary-purple">#</span>
               contato
-            </p>
+            </a>
             <div className="dropdown dropdown-hover">
               <p
                 tabIndex={0}
@@ -85,28 +85,28 @@ export const Header = () => {
               className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-44"
             >
               <li>
-                <p
+                <a
                   className="cursor-pointer"
                   onClick={() => handleRedirect("/portfolio/projetos")}
                 >
                   <span className="text-primary-purple">#</span>projetos
-                </p>
+                </a>
               </li>
               <li>
-                <p
+                <a
                   className="cursor-pointer"
                   onClick={() => handleRedirect("/portfolio/sobre-mim")}
                 >
                   <span className="text-primary-purple">#</span>sobre-mim
-                </p>
+                </a>
               </li>
               <li>
-                <p
+                <a
                   className="cursor-pointer"
                   onClick={() => handleRedirect("/portfolio/contato")}
                 >
                   <span className="text-primary-purple">#</span>contato
-                </p>
+                </a>
               </li>
               <li className="flex flex-row justify-around w-full">
                 <a
@@ -127,7 +127,7 @@ export const Header = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };

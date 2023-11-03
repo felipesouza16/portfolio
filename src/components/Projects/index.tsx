@@ -4,9 +4,9 @@ import projects from "../../data/projects.json";
 
 export const Projects = () => {
   const navigate = useNavigate();
-
+  const widthClient = document.documentElement.clientWidth;
   return (
-    <div className="flex flex-col gap-y-8 w-3/4">
+    <section className="flex flex-col gap-y-8 w-3/4">
       <div className="flex justify-between">
         <div className="flex w-4/6">
           <h2 className="text-2xl">
@@ -16,7 +16,7 @@ export const Projects = () => {
           <hr className="w-full ml-1 mt-4 border-primary-purple" />
         </div>
         <div className="flex w-2/6 justify-end">
-          <p
+          <a
             className="text-base text-end cursor-pointer"
             onClick={() => {
               window.scrollTo(0, 0);
@@ -24,28 +24,32 @@ export const Projects = () => {
             }}
           >
             Ver tudo {"~~>"}
-          </p>
+          </a>
         </div>
       </div>
       <div className="hidden lg:flex lg:flex-row gap-y-4 justify-between">
-        {projects.slice(0, 3).map((project) => {
-          return (
-            <CardProject
-              name={project.name}
-              repository={project.repository}
-              technologies={project.technologies}
-              description={project.description}
-              link_live={project.link_live}
-              image={project.image}
-            />
-          );
-        })}
+        {projects
+          .slice(0, widthClient >= 1800 ? 4 : 3)
+          .map((project, index) => {
+            return (
+              <CardProject
+                key={index}
+                name={project.name}
+                repository={project.repository}
+                technologies={project.technologies}
+                description={project.description}
+                link_live={project.link_live}
+                image={project.image}
+              />
+            );
+          })}
       </div>
       <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral bg-transparent rounded-box lg:hidden">
-        {projects.slice(0, 3).map((project) => {
+        {projects.slice(0, 3).map((project, index) => {
           return (
             <div className="carousel-item">
               <CardProject
+                key={index}
                 name={project.name}
                 repository={project.repository}
                 technologies={project.technologies}
@@ -57,6 +61,6 @@ export const Projects = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };

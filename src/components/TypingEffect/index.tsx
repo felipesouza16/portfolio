@@ -35,5 +35,9 @@ export const TypingEffect = ({ text, speed }: TypingEffectProps) => {
     };
   }, [text, speed, isTyping]);
 
-  return <div>{displayedText}</div>;
+  return (
+    <div>
+      <p>{displayedText}</p>
+    </div>
+  );
 };

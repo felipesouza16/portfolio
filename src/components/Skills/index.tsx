@@ -2,7 +2,7 @@ import decorations from "/decorations-1.png";
 
 export const Skills = () => {
   return (
-    <div className="flex flex-col w-3/4 gap-y-8">
+    <section className="flex flex-col w-3/4 gap-y-8">
       <div className="flex lg:w-2/5 w-full">
         <h2 className="text-2xl">
           <span className="text-primary-purple">#</span>
@@ -131,6 +131,6 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

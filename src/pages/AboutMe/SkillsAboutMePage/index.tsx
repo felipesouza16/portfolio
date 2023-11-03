@@ -2,12 +2,14 @@ export const SkillsAboutMePage = () => {
   return (
     <div>
       <div className="hidden xl:flex xl:flex-row justify-around">
-        <div className="w-44 border border-grey h-24">
+        <div className="w-44 border border-grey max-h-28">
           <div className="flex border border-b-grey border-x-0 border-t-0 h-7 items-center">
             <p className="text-base font-semibold px-2 py-1">Linguagens</p>
           </div>
           <div className="flex p-2">
-            <p className="text-base text-grey">TypeScript JavaScript C#</p>
+            <p className="text-base text-grey">
+              TypeScript JavaScript C# Python
+            </p>
           </div>
         </div>
         <div className="w-44 border border-grey h-24">

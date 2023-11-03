@@ -4,7 +4,7 @@ import image from "/image-2.png";
 export const AboutMe = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col w-3/4 gap-y-8">
+    <section className="flex flex-col w-3/4 gap-y-8">
       <div className="flex">
         <h2 className="text-2xl">
           <span className="text-primary-purple">#</span>
@@ -27,21 +27,21 @@ export const AboutMe = () => {
             minha paixão há mais dois anos. Eu sempre me esforço para aprender e
             estar por dentro das novidades sobre novas tecnologias e frameworks.
           </p>
-          <button
+          <a
             type="button"
-            className="text-sm font-medium w-36 h-9 border text-white border-primary-purple"
+            className="text-sm cursor-pointer text-center py-2 font-medium w-36 h-9 border text-white border-primary-purple"
             onClick={() => {
               window.scrollTo(0, 0);
               navigate("/portfolio/sobre-mim");
             }}
           >
             Leia mais {"->"}
-          </button>
+          </a>
         </div>
         <div className="flex flex-col lg:w-80 lg:h-1/2 items-center justify-center">
           <img src={image} alt="image-2" className="max-lg:max-h-[28rem]" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

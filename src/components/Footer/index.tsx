@@ -9,9 +9,7 @@ export const Footer = () => {
         <p className="text-base text-white font-bold cursor-pointer">
           felipeSouza.dev
         </p>
-        <p className="text-base text-white font-normal">
-          Desenvolvedor front-end e back-end.
-        </p>
+        <p className="text-base text-white font-normal">Desenvolvedor Web.</p>
       </div>
       <div className="flex flex-col max-lg:w-full max-lg:items-end">
         <p className="text-xl text-white font-normal cursor-pointer">Media</p>
