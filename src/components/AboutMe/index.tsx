@@ -12,7 +12,7 @@ export const AboutMe = () => {
         </h2>
         <hr className="lg:w-80 w-36 ml-1 mt-4 border-primary-purple" />
       </div>
-      <div className="flex lg:flex-row gap-y-6 flex-col-reverse w-full lg:justify-around">
+      <div className="flex lg:flex-row gap-y-6 flex-col-reverse w-full lg:justify-between">
         <div className="flex flex-col items-start  lg:w-3/5 gap-y-6 text-base font-normal text-grey">
           <p>Olá, sou o Felipe!</p>
           <p>
