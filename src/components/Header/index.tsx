@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Github } from "../../assets/Github";
 import { LinkedIn } from "../../assets/LinkedIn";
 import { List } from "../../assets/List";
+import { Logo } from "../Logo";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -14,12 +15,13 @@ export const Header = () => {
     <header className="flex h-16 z-50 bg-background fixed w-3/4">
       <nav className="flex justify-between w-full">
         <div className="flex flex-col justify-end">
-          <a
+          <Logo />
+          {/* <a
             className="text-base font-bold cursor-pointer"
             onClick={() => handleRedirect("/portfolio")}
           >
             felipeSouza.dev
-          </a>
+          </a> */}
         </div>
         <div className="lg:flex lg:flex-col lg:justify-end lg:w-96 text-grey max-lg:hidden">
           <div className="flex justify-between">
